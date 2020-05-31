@@ -1,0 +1,46 @@
+<!-- <div class="info-wrapper">
+			
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>S.N</th>
+					<th>Parking Slot no.</th>
+					<th>Booking Date</th>
+					<th>Vehicle Number</th>
+				</tr>
+			</thead>
+				<?php
+					if ($result->num_rows>0) { ?>
+			<tbody>
+				<?php
+					foreach ($result as  $value) {  ?>
+						
+
+					 	
+
+				<tr>
+					<td><?php echo $i; ?></td>
+					<td><?php echo $value['parkingSlot_id'] ?></td>
+					<td><?php echo $value['bookingDate'] ?></td>
+					<td><?php echo $value['vehicleNo'] ?></td>
+				</tr>
+
+				<?php	
+				$i++; } 
+
+				?>
+			</tbody>
+				<?php	}
+				?> 
+
+		</table> -->
+
+		<div class="main-content">
+			
+			<div class="admin-side-bar">
+				<?php 
+						include_once'adminSideBar.php';
+				?>
+			</div>
+			
+		</div>

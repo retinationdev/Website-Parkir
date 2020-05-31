@@ -1,0 +1,450 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:text-top;
+ background:transparent;
+}
+
+*{
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
+
+body {
+ line-height:1;
+ height: 100%;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+ display:block;
+}
+nav ul {
+ list-style:none;
+}
+blockquote, q {
+ quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+ text-decoration: none;
+ list-style: none;
+}
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000; 
+ font-style:italic;
+ font-weight:bold;
+}
+del {
+ text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0; 
+ border-top:1px solid #201e1e;
+/* margin:1em 0;*/
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+	/*reset ends here*/
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.container{
+	max-width: 100%;
+	margin: 0 auto;
+
+}
+.container::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.wrapper{
+	display: table;
+    table-layout: fixed;  /*important after display: table for footer*/
+    width: 100%;
+    min-height: 100%;
+}
+a{
+	color: black;
+
+}
+a:hover{
+	text-decoration: underline;
+	opacity: 0.5;
+}
+.header{
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkgray;
+    padding:35px 0;
+}
+
+.logo{
+	width: 10%;
+	
+
+}
+.logo img{
+	width: 100%;
+
+}
+.nav{
+
+
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 40px;
+    font-size: 20px;
+}
+.nav-right{
+
+}
+.nav-right ul li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 40px;
+    font-size: 20px;
+}
+.logout-icon{
+	margin-right: 5px;
+}
+.main{
+	/*margin-bottom: 45px;*/
+	padding-top: 10px;
+    overflow: hidden;
+    
+}
+.search{
+    padding-left: 15px;
+    width: 30%;
+    float: left;
+}
+.search input[type="date"]{
+    width:100%;
+}
+.search span{
+    display: block;
+}
+.search-result{
+    /*overflow-y: auto;*/
+    height: calc(100vh - 174px);
+    width: 70%;
+    float: right;
+    padding: 0 20px;
+    /* background: red; */
+    overflow: hidden;
+    /*display: none;*/
+}
+.table-wrapper{
+    height: 100%;
+    overflow-y: auto;
+}
+.rate-wrapper {
+    overflow:hidden;
+}
+.rate-table{
+    width: 50%;
+    float: left;
+}
+.rate-update{
+    width: 50%;
+    float: right;
+    padding:0 10px;
+}
+.bike-rate{
+    width: 50%;
+    float: left;
+    display: none;
+}
+.car-rate{
+    width: 50%;
+    float: right;
+    display: none;
+}
+input[type="text"], input[type="date"],input[type="password"],input[type="number"]{
+    font-size: 0.9em;
+    font-weight: 100;
+    width: 50%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: gray;
+    color: white;
+  font-family: 'Roboto Condensed', sans-serif;  
+}
+
+ input[type="password"] {
+    font-size: 0.9em;
+    font-weight: 100;
+    width: 94.5%;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: gray;
+    color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.booking{
+	width: 50%;
+	overflow: hidden;
+	padding-top: 25px;
+}
+.form-wrapper{
+	float: right;
+}
+.slots-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slots{
+	padding:20px;
+}
+.button{
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+   /* margin-top: 15px;*/
+}
+.gap{
+    margin-top: 10px;
+}
+.bike-slots{
+	width: 50%;
+	text-align: center;
+	color: red;
+	font-family: lato;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 1px solid black;
+   
+}
+.car-slots{
+	width: 50%;
+	text-align: center;
+	color: green;
+    font-family: lato;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.booked{
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+     pointer-events: none;
+
+}
+.booked-admin{
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.booked-cancel{
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.profile-wrapper{
+    overflow: hidden;
+}
+.changePassword{
+    width: 50%;
+    float: right;
+}
+
+.formWrapper{
+    width: 50%;
+    float: left;
+}
+.changePass{
+    display: none;
+    width: 50%;
+    padding-top: 15px;
+}
+#oldPasswordAjax{
+    display: block;
+}
+#msg{
+    display: block;
+    font-size: 15px;
+    color: green;
+    font-family: lato;
+}
+
+#msg h3{
+    padding:0 0 10px;
+}
+
+.myBooking-history{
+    display: none;
+    margin-top: 10px;
+
+}
+ .show-history{
+    font-family: lato;
+    font-size: 25px;
+}
+
+.myBooking-today{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.myBooking-today h2{
+margin: 0 0 20px;
+font-size: 25px;
+font-family: lato;
+}
+.myBooking-today p{
+    padding: 0 0 5px;
+}
+.booking-wrapper{
+    overflow: hidden;
+}
+.show-history-block{
+    width: 50%;
+    float: right;
+}
+.title h1{
+    font-size: 30px;
+    /*font-family: lato;*/
+}
+.admin-side-bar{
+    position: fixed;
+    z-index: 1;
+    background: #111;
+    width: 225px;
+    /* height: calc(100% - 36px); */
+    bottom: 36px;
+    top: 120px;
+}
+.admin-side-bar .side-bar{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.main-content{
+    float: right;
+    width: calc(100% - 225px);
+}
+.side-bar a{
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+
+    display: table-footer-group;
+
+}
+.footer-wrapper{
+    background: gray;
+    padding: 10px 0;
+}
